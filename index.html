@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="topbar">
+
+    </div>
+    <section id="new-note" class="hide">
+        <div class="container">
+            <input id="title" type="text" placeholder="Enter Title Here...">
+            <br>
+            <textarea name="note" id="note" cols="30" rows="15" placeholder="Your Note Here..."></textarea>
+            <div id="add">
+                <button onclick="add()">Add</button>
+                <button onclick="clearnote()">Clear</button>
+                <input type="color" name="color" id="color">
+                <label for="color">Color : </label>
+            </div>
+        </div>
+    </section>
+    <section id="btn-section">
+        <div id="add-btn" onclick="addtask()" class="btn"><h1>+</h1></div>
+    </section>
+    <section id="search-section">
+        <img onclick="search()" class="search" src="/icons8-search-30.png">
+    </section>
+    <section id="logo-section">
+        <h1 class="logo">Notes</h1>
+    </section>
+    <section id="over">
+        <div id="list" class="note-list">
+            <!-- notes here -->
+        </div>
+    </section>
+    
+<script src="/app.js"></script>  
+</body>
+</html>
